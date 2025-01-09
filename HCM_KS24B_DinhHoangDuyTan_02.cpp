@@ -90,7 +90,7 @@ int xoaphantu(int arr[], int n) {
     return n;
 }
 
-int* sapxep_insertionsort(int arr[], int n) {
+int sapxep_insertionsort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
         int j = i - 1;
@@ -100,7 +100,7 @@ int* sapxep_insertionsort(int arr[], int n) {
         }
         arr[j + 1] = key;
     }
-    return arr;
+    return 0;
 }
 
 int binarysearch(int arr[], int n, int x) {
@@ -118,7 +118,7 @@ int binarysearch(int arr[], int n, int x) {
     return 0;
 }
 
-int* sapxepchanle(int arr[], int n) {
+int sapxepchanle(int arr[], int n) {
     int arr_chan[n], arr_le[n];
     int chan_count = 0, le_count = 0;
 
@@ -158,17 +158,17 @@ int* sapxepchanle(int arr[], int n) {
         arr[index++] = arr_le[i];
     }
 
-    return arr;
+    return 0;
 }
 
-int* daonguocmang(int arr[], int n) {
+int daonguocmang(int arr[], int n) {
     int temp;
     for (int i = 0; i < n / 2; i++) {
         temp = arr[i];
         arr[i] = arr[n - 1 - i];
         arr[n - 1 - i] = temp;
     }
-    return arr;
+    return 0;
 }
 
 int main() {
